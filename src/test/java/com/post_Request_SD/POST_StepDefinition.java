@@ -1,11 +1,16 @@
 package com.post_Request_SD;
 
+import java.util.Iterator;
+import java.util.List;
+
 import org.junit.Assert;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
 import io.restassured.response.Response;
 
 public class POST_StepDefinition {
@@ -46,6 +51,19 @@ public class POST_StepDefinition {
         	  String actID = response.getBody().jsonPath().getString("id");
         	  Assert.assertTrue(actID !=null);
         	  Assert.assertTrue(Integer.parseInt(actID)>0);
+          }
+
+          @Then("validate all headers")
+          public void validate_all_headers() {
+              
+        	  Headers allheaders = response.getHeaders();
+        	 List<Header>  listheaders = allheaders.asList();
+        	 
+        	 for(Iterator iterator = allheaders.iterator(); iterator.hasNext(); ) {
+        		 
+        		 Header header = (Header) iterator.next();
+        		 System.out.println(header.toString());
+        	 }
           }
 
 

@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue={"com.Get_Request"},
 		plugin={"pretty",
 				"html:target/cucumber-htmlreport",
-				"json:target/cucumber-report2.json",
+				"json:target/cucumber-report5.json",
 		}
 		)
 public class GET_RunnerFile {

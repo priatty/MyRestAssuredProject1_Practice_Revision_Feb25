@@ -1,5 +1,5 @@
 
-package com.post_Request_SD;
+package com.Put_Request;
 import org.junit.runner.RunWith;
 
 import io.cucumber.junit.Cucumber;
@@ -7,13 +7,13 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features= {"src/test/resources/com/post_Request_FF/post_Request.feature"},
-		glue={"com.post_Request_SD"},
+		features= {"src/test/resources/com/Put_Request_FF/Put_Request.feature"},
+		glue={"com.Put_Request"},
 		plugin={"pretty",
 				"html:target/cucumber-htmlreport",
-				"json:target/cucumber-report7.json",
+				"json:target/cucumber-report8.json",
 		}
 		)
-public class POST_RunnerFile {
+public class Put_RunnerFile {
 
 }

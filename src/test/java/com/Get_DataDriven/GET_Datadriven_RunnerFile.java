@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue={"com.Get_DataDriven"},
 		plugin={"pretty",
 				"html:target/cucumber-htmlreport",
-				"json:target/cucumber-report2.json",
+				"json:target/cucumber-report3.json",
 		}
 		)
 public class GET_Datadriven_RunnerFile {
