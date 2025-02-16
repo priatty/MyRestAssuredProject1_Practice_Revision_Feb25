@@ -93,9 +93,14 @@
 		      <version>1.2.0</version>
 		      <scope>test</scope>
 		 </dependency>
-		 
 
-	 
+
+
+		<dependency>
+			<groupId>MyRestAssuredProject1</groupId>
+			<artifactId>MyRestAssuredProject1</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
   </dependencies>
   
   <build>
