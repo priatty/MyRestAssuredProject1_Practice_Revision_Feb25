@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue={"com.post_Request_SD"},
 		plugin={"pretty",
 				"html:target/cucumber-htmlreport",
-				"json:target/cucumber-report7.json",
+				"json:target/cucumber-report8.json",
 		}
 		)
 public class POST_RunnerFile {
